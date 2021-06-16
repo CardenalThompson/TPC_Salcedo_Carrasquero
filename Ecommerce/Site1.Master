@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Ecommerce.Site1" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lalal</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse align-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Default.aspx">Default</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.aspx">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="COntact.aspx">Contact</a>
+                    </li>
+                </ul>
+                <form runat="server" class="d-flex ">
+                    <a>--</a>
+                    <asp:TextBox ID="TexBuscar" runat="server">  </asp:TextBox>
+                    <a>--</a>
+                    <asp:Button ID="btnBuscar" CssClass="btn-success" runat="server" Text="Search" />
+                </form>
+            </div>
+        </div>
+    </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+<script src="Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

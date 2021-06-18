@@ -11,6 +11,6 @@ namespace Dominio
         public User Usuario { get; set; }
         public string Nombre { get; set; }
         public string email { get; set; }
-        public Direccion direcccion { get; set; }
+        public Domicilio domicilio { get; set; }
     }
 }

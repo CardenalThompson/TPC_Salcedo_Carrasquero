@@ -10,7 +10,7 @@ namespace Dominio
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public Direccion direccion { get; set; }
+        public Domicilio domicilio { get; set; }
         public string Telefono { get; set; }
     }
 }

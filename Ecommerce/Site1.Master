@@ -6,6 +6,8 @@
 <head runat="server">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
     <title>lalal</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
@@ -21,7 +23,7 @@
                         <a class="nav-link active" href="Default.aspx">Default</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="About.aspx">About</a>
+                        <a class="nav-link" href="Catalogo.aspx">Catalogo</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="COntact.aspx">Contact</a>

@@ -18,9 +18,10 @@ namespace Negosio
         public AccesoDatos()
         {
 
-            conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog=CATALOGO_DB; integrated security=sspi ");
+            conexion = new SqlConnection("data source=.\\SQLEXPRESS; initial catalog = Ecommerce; integrated security=sspi ");
+                                                                             
 
-            comando = new SqlCommand();
+             comando = new SqlCommand();
             comando.Connection = conexion;
         }
         public void conectar()

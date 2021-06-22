@@ -19,7 +19,9 @@ namespace Negosio
                 List<Producto> lista = new List<Producto>();
                 AccesoDatos conexion = new AccesoDatos();
                 conexion.conectar();
-                conexion.setearQuery("select P.Id idpro, P.UrlImagen, P.Nombre,P.Descripcion,M.id idMarca,M.Nombre marca,C.Id idCategoria,C.Nombre Cat ,P.Estado estado, P.Precio precio,P.Stock stock from Producto P ,Marca M, Categoria C where P.idmarca=M.id AND	P.IdCategoria=C.id");
+                conexion.setearQuery("select P.Id idpro, P.UrlImagen, P.Nombre,P.Descripcion,M.id idMarca,M.Nombre marca," +
+                                    "C.Id idCategoria,C.Nombre Cat ,P.Estado estado, P.Precio precio,P.Stock stock from Producto P ," +
+                                    "Marca M, Categoria C where P.idmarca=M.id AND	P.IdCategoria=C.id");
                 SqlDataReader lector = conexion.leer();
 
                 while (lector.Read())

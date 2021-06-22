@@ -9,7 +9,9 @@
      <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <title>lalal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style/Styles.css" rel="stylesheet" />
 </head>
 <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -39,6 +41,15 @@
         </div>
     </nav>
 
+         <nav class="navbar navbar-light sticky-top bg-light">
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

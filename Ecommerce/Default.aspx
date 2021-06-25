@@ -28,36 +28,26 @@
        </button>
      </div>
 
-
-     <div class="row bg-ligth">
-          <div class="col col-12 col-sm-6 col-md-4  ">
-               <div class="seguridad">
-                     <p>
-                        <i class="bi bi-truck"></i>
-                    </p>
-                    <h3>Envío gratis</h3>
-                    <h6>Tenés envios gratis en miles de productos</h6>
-               </div>
-          </div>
-          <div class="col col-12 col-sm-6 col-md-4 ">
-               <div class="seguridad">
-                     <p>
-                        <i  class="bi bi-credit-card"></i>
-                    </p>
-                    <h3>Pagá con tarjeta o en efectivo</h3>
-                    <h6>Tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
-                    </h6>
+      <div class="container mt-4">
+          <div class="row text-center">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                 <img src="https://images.fravega.com/s250/e1845d91c77f353b58d9af2c87af4b39.png"style="height:15rem; width:15rem;" alt="...">
+                  
+                  <h1>Televisores</h1>
+                  </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="https://images.fravega.com/s250/0bd4ff058e0ec5e7e2c27810a7bccc78.png"style="height:15rem; width:15rem;" alt="...">
+                    
+                    <h1>Lavaropas</h1>
                 </div>
-          </div>
-          <div class="col col-12  col-md-4  ">
-              <div class="seguridad">
-                     <p>
-                        <i class="bi bi-shield-shaded"></i>
-                    </p>
-                    <h3>Seguridad, de principio a fin</h3>
-                    <h6>No te gustá? Devolvelo sin problemas,siempre estas protegido</h6>
+                <div class="col-lg-4 col-md-6 col-sm-12" >
+                   <img src="https://images.fravega.com/s250/d0d1523c0007261e84635068a4bbad63.png"style="height:15rem; width:15rem;" alt="...">
+                  
+                    <h1>Celulares</h1>
+                    
                 </div>
           </div>
       </div>
+      <br />    
 
 </asp:Content>

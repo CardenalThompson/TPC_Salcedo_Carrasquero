@@ -22,6 +22,10 @@ namespace Ecommerce
             {
                 Session.Add("carrito", new List<Producto>());
             }
+            else
+            {
+                carritoCompra = (List<Producto>)Session["carrito"];
+            }
 
             if (!IsPostBack)
             {

@@ -16,7 +16,22 @@ namespace Ecommerce
         {
             ProductoNegosio Negosio = new ProductoNegosio();
 
-                    listaProducto = Negosio.listar();//llenamos la variable listaArticulos de todos los articulos en base de datos
+            try
+            {
+                if (Session["ListBuscar"] == null)                                  // si la session "ListBuscar" es nulo 
+                {
+                    listaProducto = Negosio.listar();                                //llenamos la variable listaArticulos de todos los articulos en base de datos
+                }
+                else
+                {
+                    listaProducto = (List<Producto>)Session["ListBuscar"];         //si no llenamos la listaArticulos con la ssesion de busqueda
+                    Session["ListBuscar"] = null;
+                }
+            }
+            catch
+            {
+                Response.Redirect("Error.aspx");
+            }
         }
     }
 }
